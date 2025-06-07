@@ -1,0 +1,212 @@
+.App {
+  height: 300vh;
+  padding-top:45px;
+  align-items: center;  
+}
+.App-logo {
+  height: 40px;
+  width: 40px;
+}
+
+
+
+.btn{
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.btn-1{
+  background-color: #000000; /* Green */
+  color: white;
+  font-weight: 700;
+}
+
+.btn-2{
+  background-color: #f5f5f5; /* Red */
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  border: 1px #a8a8a8 solid;
+
+}
+
+
+.navbar {
+  padding-inline: 20px;
+  border-bottom: #000000 1px solid;
+  background-color: #ffffff;;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 50%;
+  padding-right: 40px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+.nav-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width:75%;
+  margin-left: 10px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+  font-size: 13px;
+  padding: 10px;
+  font-family: poppins, sans-serif;
+  transition: font-size 0.3s ease-in-out, color 0.3s;
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 100%;
+  height: 2px;
+  background: #ff0000; /* underline color */
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+a:hover {
+  font-size: 18px;
+  color: #ff0000; /* optional: change color on hover */
+}
+
+.signup-button{
+  background-color: #000000; /* Green */
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 700
+}
+
+.search-container {
+ position: relative;
+ display: inline-block
+}
+
+.search-bar {
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  padding-left:30px;
+  background-color: #f5f5f5;
+}
+.search-bar:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.search-bar::placeholder {
+  color: #888;
+  font-size: 12px;
+  font-style: italic;
+}
+
+.search-icon {
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; 
+}
+
+.logo{
+  color: #000000;
+}
+
+.logo-highlight {
+  color: #ff0000;
+  font-size: larger;
+}
+
+
+
+.firstPageContainer {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh
+  
+}
+
+.Medicine {
+  width: 700px;   /* or any size you want */
+  height: auto;   /* maintains aspect ratio */
+  display: block;
+}
+
+
+.text1 {
+  font-size: 50px;
+  color: #000000;
+  font-weight: 700;
+  font-family: poppins, sans-serif;
+  margin: 0
+}
+
+.text2 {
+  font-size: 14px;
+  color: #888888;
+  font-weight: 500;
+  font-family: poppins, sans-serif;
+  margin: 10px 0 20px 0;
+}
+
+.serviceImage {
+  width: 30px;   /* or any size you want */
+  height: auto;   /* maintains aspect ratio */
+}
