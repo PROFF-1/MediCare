@@ -1,5 +1,5 @@
 .App {
-  height: 300vh;
+  height: auto;
   padding-top:45px;
   align-items: center; 
   background-color: #f4f4f5; 
@@ -7,6 +7,14 @@
 .App-logo {
   height: 40px;
   width: 40px;
+}
+
+
+.medicinecover {
+  width: 40%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 
@@ -71,7 +79,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
   padding-right: 40px;
 }
 
@@ -107,27 +115,11 @@ a {
   transition: font-size 0.3s ease-in-out, color 0.3s;
 }
 
-a::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 2px;
-  width: 100%;
-  height: 2px;
-  background: #ff0000; /* underline color */
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease-in-out;
-}
-
-a:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
 
 a:hover {
-  font-size: 18px;
-  color: #ff0000; /* optional: change color on hover */
+  color: #ff0000;
+  text-decoration: underline;
+  font-size: 15px; /* optional: change color on hover */
 }
 
 .signup-button{
@@ -229,8 +221,9 @@ a:hover {
 .serviceText {
   font-size: 14px;
   color: #000000;
-  font-weight: 500;
+  font-weight: 700;
   font-family: poppins, sans-serif;
+  margin: 15px 0px 0px 0px;
 }
 .serviceDescription {
   font-size: 12px;
@@ -253,14 +246,44 @@ a:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 12px;
 }
 
-.serviceContainer {
+.serviceContainer{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 } 
+
+.reasonsContainer {
+   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 100px;}
+
+.serviceSubDescription {
+  font-size: 14px;
+  color: #000000;
+  font-weight: 700;
+  font-family: poppins, sans-serif;
+  margin: 0px;
+  text-align: center;
+}
+
+.reasonCard {
+  width: 330px;
+  height: 150px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #d8d8d8;
+}
 
 
 .title1 {
@@ -345,5 +368,139 @@ a:hover {
   align-items: center;
   justify-content: space-around;
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 200px;
 }
+
+.footer {
+  background-color: #000000;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.footerContainer {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 40px 40px 40px 20px;
+  text-align: left;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+
+.footerLogo {
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 250px;
+}
+
+
+.footerLine {
+  display: block;
+  margin: 30px auto 10px auto; /* top, right/left, bottom */
+  width: 80%;                  /* or any width you prefer */
+  height: 1px;
+  background-color: #c0c0c0;
+  border: none;
+}
+
+
+.tag {
+  font-size: 12px;
+  font-family: poppins, sans-serif;
+  color: #c0c0c0;
+  margin: 5px 0px 20px 0px;
+}
+
+
+.footerText {
+  font-size: 14px;
+  font-family: poppins, sans-serif;
+  color: #aeadad;
+  margin: 25px auto 20px auto;
+  text-align: center;
+  
+}
+
+
+.footerSocialIcons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100px;
+}
+
+
+.head {
+  font-weight: 700;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: poppins, sans-serif;
+  margin:0px 0px 10px 0px;
+}
+
+
+.socialIcon { 
+  margin-right: 25px;
+}
+
+
+.footerLinks a {
+  color: #c0c0c0;
+  text-decoration: none;      /* Remove underline */
+  font-size: 12px;
+  transition: color 0.2s;
+  font-family: poppins, sans-serif;
+  transition: font-size 0.3s ease-in-out, letter-spacing 0.3s ease-in-out;
+}
+
+.footerLinks a:hover {
+  color: #ff0000;             /* Red on hover */
+  font-size: 14px;;
+  letter-spacing: 1px;
+  text-decoration: underline;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;   /* Stack links vertically */
+  gap: 7px;                 /* Space between links */
+  padding:0;
+  margin: 0;
+}
+
+.footerLinksContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 300px;
+
+}
+
+.footerLinks li {
+  list-style: none;
+  margin: 0px 0px 0px -10px; /* Adjust margin to remove extra space */
+  padding: 0;
+}
+
+
+.contactInfo {
+  margin: 0px 0px 20px 0px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.location {
+  display: inline;
+  
+
+}
+
